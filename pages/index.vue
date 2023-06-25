@@ -1,9 +1,14 @@
 <template>
-  <Tutorial/>
+  <main-header />
 </template>
 
 <script>
+import MainHeader from '~/components/MainHeader.vue'
+
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {
+    MainHeader
+  }
 }
 </script>
