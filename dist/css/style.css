@@ -395,6 +395,7 @@ body {
 ::before {
   box-sizing: inherit;
   outline: none;
+  font-family: "Golos Text", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -402,7 +403,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: #000000;
+  background: #fff;
   height: 100%;
 }
 
