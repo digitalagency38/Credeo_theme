@@ -14,11 +14,40 @@
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
         <main class="content">
-            
+            @@include('blocks/modules/questions/questions.html', {})
+            @@include('blocks/modules/map/map.html', {})
         </main>
         @@include('blocks/modules/footer/footer.html', {})
         @@include('blocks/modules/modals/main.modal.html', {})
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [55.812934, 37.528777],
+            zoom: 10
+        });
+
+        var markers = [
+            { coordinates: [55.746856, 37.663126], content: 'ул. Николоямская д.52 стр.1, офис 204' },
+            { coordinates: [55.903368, 37.384756], content: 'Куркино, ул.Соколово-Мещерская, д.25, 2 этаж, офис 35' }
+        ];
+
+        markers.forEach(function(marker) {
+            var placemark = new ymaps.Placemark(
+            marker.coordinates,
+            { content: marker.content }
+            );
+
+            myMap.geoObjects.add(placemark);
+
+            myMap.behaviors.enable('dblClickZoom');
+            placemark.options.set('draggable', true);
+        });
+        }
+    </script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

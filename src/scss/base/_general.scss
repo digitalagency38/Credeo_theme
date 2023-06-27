@@ -1,7 +1,11 @@
+$primary-color: #4EC275;
+$secondary-color: #303633;
+$primary_white-color: #E9E9E9;
+$secondary_white-color: #F7F9FA;
+
 body {
     box-sizing: border-box;
 }
-
 *,
 ::after,
 ::before {
@@ -63,7 +67,7 @@ textarea {
 
 /* Track */
 *::-webkit-scrollbar-track {
-    background: #303633;
+    background: $secondary-color;
 }
 
 /* Handle */
@@ -77,3 +81,14 @@ textarea {
 }
 
 // scrollbar end
+.section_h1 {
+    margin: 0;
+    color: #303633;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 61px;
+    @media all and (max-width: 1023px) {
+        font-size: 24px;
+        line-height: 130%;
+    }
+}
