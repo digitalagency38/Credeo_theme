@@ -1,5 +1,19 @@
 const Header = class Header {
-    constructor(){}
+    constructor({isMobileMenuOpened}){
+        this.isMobileMenuOpened = false;
+    }
+    toogleMobileMenu() {
+        this.isMobileMenuOpened = !this.isMobileMenuOpened;
+    }
+    closeMobileMenu() {
+        this.isMobileMenuOpened = false;
+    }
+    setEventListener() {
+        document.addEventListener('click', (event) => {
+            if (event.target.closest('.header__burger--body') || event.target.closest('.header__burger')) return;
+            this.closeMobileMenu();
+        }) 
+    }
     fixedHeader() {
         document.addEventListener('DOMContentLoaded', () => {
             const header = document.querySelector('.header');
@@ -24,6 +38,7 @@ const Header = class Header {
         });
     }
     init() {
+        this.setEventListener();
         this.fixedHeader();
     }
 }

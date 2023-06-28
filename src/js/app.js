@@ -5,6 +5,7 @@ import Vue from 'vue/dist/vue.js';
 import $ from 'jquery';
 
 import Header from '../blocks/modules/header/header.js';
+import Reviews from '../blocks/modules/reviews/reviews.js';
 import Questions from '../blocks/modules/questions/questions.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -17,7 +18,10 @@ window.app = new Vue({
             mobile: 768,
             window: window.innerWidth
         },
-        header: new Header(),
+        header: new Header({
+            isMobileMenuOpened: false,
+        }),
+        reviews: new Reviews(),
         questions: new Questions(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -33,6 +37,7 @@ window.app = new Vue({
     beforeMount() {
         this.isMounted = true;
         this.header.init();
+        this.reviews.init();
         this.questions.init();
         this.modals.init();
     },

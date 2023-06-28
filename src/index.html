@@ -14,6 +14,11 @@
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
         <main class="content">
+            @@include('blocks/modules/bid_block/bid_block.html', {})
+            @@include('blocks/modules/stand/stand.html', {})
+            @@include('blocks/modules/stocks/stocks.html', {})
+            @@include('blocks/modules/reviews/reviews.html', {})
+            @@include('blocks/modules/calc_form/calc_form.html', {})
             @@include('blocks/modules/questions/questions.html', {})
             @@include('blocks/modules/map/map.html', {})
         </main>

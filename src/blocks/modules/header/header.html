@@ -29,13 +29,13 @@
             <a href="tel:84951207179" class="header__tel">8 (495) 120-7179</a>
             <button class="header__btn" data-modal-id="1">Оставить заявку</button>
         </div>
-        <div class="header__burger">
-            <div class="header__burger--icon"></div>
+        <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}">
+            <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
             <div class="header__burger--body">
                 <div class="header__burger--logo">
                     <img src="./img/logo.svg" alt="">
                 </div>
-                <div class="header__burger--close"></div>
+                <div class="header__burger--close" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
                 <nav class="header__burger--menu">
                     <ul>
                         <li><a href="#">Калькулятор</a></li>

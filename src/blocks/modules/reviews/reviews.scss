@@ -1,0 +1,99 @@
+.reviews__block {
+    overflow: hidden;
+    padding-bottom: 53px;
+    padding-top: 70px;
+    @media all and (max-width: 1023px) {
+        padding-bottom: 40px;
+        padding-top: 33px;
+    }
+    &__top {
+        margin-bottom: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    &__btn {
+        color: #FFF;
+        font-size: 14px;
+        line-height: 32px;
+        padding: 9px 29px;
+        text-decoration: none;
+        border-radius: 9px;
+        background: #4EC275;
+        @media all and (max-width: 1023px) {
+            display: none;
+        }
+    }
+    .slick-list {
+        overflow: unset;
+        margin: 0 -9px;
+        @media all and (max-width: 1023px) {
+            margin: 0;
+        }
+    }
+    .slick-slide {
+        margin: 0 9px;
+        @media all and (max-width: 1023px) {
+            margin: 0px;
+            width: 234px;
+            margin-right: 10px;
+        }
+    }
+    &__block {
+        padding: 60px 45px 45px 45px;
+        border-radius: 40px;
+        background: #F7F9FA;
+        @media all and (max-width: 1023px) {
+            padding: 40px 24px 32px 24px;
+            border-radius: 20px;
+            width: 234px;
+        }
+    }
+    &__tit {
+        color: #303633;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+            margin-bottom: 33px;
+        }
+    }
+    &__text {
+        color: #303633;
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 30px;
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        color: #303633;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 10px;
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+            margin-right: 8px;
+        }
+    }
+    &__rating {
+        font-size: 0;
+        display: flex;
+        align-items: center;
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
