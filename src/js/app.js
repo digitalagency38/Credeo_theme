@@ -2,9 +2,9 @@ import * as globalFunctions from './modules/functions.js';
 globalFunctions.isWebp();
 
 import Vue from 'vue/dist/vue.js';
-import $ from 'jquery';
 
 import Header from '../blocks/modules/header/header.js';
+import Bid from '../blocks/modules/bid_block/bid_block.js';
 import Reviews from '../blocks/modules/reviews/reviews.js';
 import Questions from '../blocks/modules/questions/questions.js';
 import Modals from '../blocks/modules/modals/modals.js';
@@ -21,6 +21,7 @@ window.app = new Vue({
         header: new Header({
             isMobileMenuOpened: false,
         }),
+        bid: new Bid(),
         reviews: new Reviews(),
         questions: new Questions(),
         modals: new Modals({
@@ -37,6 +38,7 @@ window.app = new Vue({
     beforeMount() {
         this.isMounted = true;
         this.header.init();
+        this.bid.init();
         this.reviews.init();
         this.questions.init();
         this.modals.init();

@@ -1,0 +1,91 @@
+.bid_block {
+    overflow: hidden;
+    padding-top: 64px;
+    padding-bottom: 63px;
+    @media all and (max-width: 1023px) {
+        padding-top: 34px;
+        padding-bottom: 50px;
+    }
+    &__title {
+        margin-bottom: 65px;
+        @media all and (max-width: 1023px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    .slick-list {
+        margin-left: -8px;
+        margin-right: -8px;
+        overflow: unset;
+        @media all and (max-width: 1023px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .slick-slide {
+        margin-left: 8px;
+        margin-right: 8px;
+        @media all and (max-width: 1023px) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-right: 11px;
+        }
+    }
+    &__block {
+        display: flex !important;
+        padding: 18px;
+        border-radius: 15px;
+        background: #EFF1F2;
+        @media all and (max-width: 1023px) {
+            width: 267px;
+            padding: 8px;
+            flex-direction: column-reverse;
+        }
+    }
+    &__l-side {
+        width: 50%;
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            padding-right: 0;
+            margin-top: 17px;
+        }
+    }
+    &__tit {
+        color: #303633;
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        line-height: 123%;
+    }
+    &__year {
+        color: #303633;
+        font-size: 12px;
+        line-height: 123%;
+        margin-bottom: 11px;
+    }
+    &__price {
+        margin-top: auto;
+        color: #303633;
+        font-size: 15px;
+        line-height: 123%;
+    }
+    &__r-side {
+        width: 50%;
+        font-size: 0;
+        border-radius: 12px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media all and (max-width: 1023px) {
+            width: 100%;
+        }
+    }
+    
+}
