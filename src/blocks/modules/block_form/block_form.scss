@@ -1,0 +1,106 @@
+.block_form {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    @media all and (max-width: 1023px) {
+        padding-top: 42px;
+        padding-bottom: 40px;
+    }
+    &__item {
+        display: flex;
+        overflow: hidden;
+        border-radius: 40px;
+        background: #303633;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+            border-radius: 20px;
+        }
+    }
+    &__l-side {
+        width: 50%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 376px;
+            height: 386px;
+            background: url("data:image/svg+xml,%3Csvg width='376' height='386' viewBox='0 0 376 386' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg style='mix-blend-mode:overlay' opacity='0.2'%3E%3Cpath d='M273.322 231.345C268.527 229.029 245.561 217.45 241.27 215.648C236.98 213.847 233.951 213.332 230.671 218.222C227.39 223.111 218.557 233.661 215.78 237.007C213.004 240.352 210.481 240.609 205.685 237.007C191.913 231.371 179.193 223.363 168.082 213.332C158.023 203.676 149.508 192.476 142.844 180.137C140.068 175.505 142.844 172.932 144.863 170.358C146.882 167.785 149.406 164.954 151.93 162.124C153.775 159.676 155.302 156.994 156.472 154.147C157.098 152.822 157.424 151.371 157.424 149.901C157.424 148.43 157.098 146.979 156.472 145.655C156.472 143.339 145.873 119.922 141.835 110.401C137.797 100.88 134.263 102.166 131.487 102.166H121.392C116.583 102.357 112.045 104.486 108.774 108.085C103.493 113.223 99.31 119.418 96.4871 126.281C93.6643 133.145 92.2624 140.529 92.3692 147.971C93.6601 166.241 100.249 183.707 111.297 198.15C131.572 228.86 159.311 253.686 191.805 270.202C202.909 275.091 211.49 277.922 218.304 280.238C227.873 283.187 237.987 283.804 247.832 282.039C254.371 280.687 260.568 277.979 266.038 274.083C271.508 270.188 276.135 265.188 279.631 259.394C282.541 252.239 283.5 244.415 282.407 236.749C281.145 234.948 278.117 233.661 273.322 231.345Z' fill='%23EFF1F1'/%3E%3Cpath d='M320.516 56.1043C303.062 38.1397 282.257 23.9208 259.328 14.2861C236.398 4.65143 211.809 -0.203875 187.01 0.00655873C154.158 0.181849 121.926 9.14256 93.5336 25.9937C65.1411 42.8449 41.5816 66.9967 25.2081 96.037C8.83467 125.077 0.220318 157.99 0.225463 191.487C0.230608 224.984 8.85507 257.893 25.2375 286.928L0 386L99.4356 360.267C126.925 375.519 157.733 383.483 189.029 383.427H187.01C224.309 383.675 260.835 372.59 291.93 351.586C323.026 330.582 347.282 300.611 361.605 265.495C375.928 230.379 379.669 191.709 372.351 154.416C365.033 117.123 346.987 82.898 320.516 56.1043ZM187.01 350.489C159.01 350.511 131.531 342.773 107.512 328.101L101.959 324.756L42.9037 340.453L58.5509 281.782L55.0177 275.863C34.8619 242.766 27.3224 203.277 33.8295 164.888C40.3367 126.499 60.4378 91.8804 90.319 67.6013C120.2 43.3223 157.782 31.0718 195.935 33.1741C234.088 35.2765 270.156 51.5854 297.297 79.0065C311.848 93.723 323.38 111.245 331.223 130.551C339.065 149.858 343.061 170.563 342.977 191.459C342.91 233.616 326.457 274.026 297.222 303.835C267.987 333.644 228.354 350.421 187.01 350.489Z' fill='%23EFF1F1'/%3E%3C/g%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+            right: 20px;
+            top: 50%;
+            margin-top: -170px;
+            pointer-events: none;
+            opacity: .5;
+            @media all and (max-width: 1023px) {
+                width: 137px;
+                height: 140px;
+                margin-top: 0;
+                top: 5px;
+                right: -31px;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            padding: 50px 10px;
+        }
+    }
+    &__h1 {
+        margin: 0;
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        @media all and (max-width: 1023px) {
+            font-size: 33px;
+            margin-bottom: 30px;
+        }
+    }
+    &__text {
+        color: #FFF;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 44px;
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+        }
+    }
+    &__btn {
+        border: 0;
+        margin-top: auto;
+        max-width: 391px;
+        width: 100%;
+        border-radius: 9px;
+        background: #4EC275;
+        text-align: center;
+        color: #FFF;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 23px;
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+            padding: 20px;
+        }
+    }
+    &__r-side {
+        width: 50%;
+        font-size: 0;
+        @media all and (max-width: 1023px) {
+            position: relative;
+            padding-top: 100%;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media all and (max-width: 1023px) {
+                top: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}

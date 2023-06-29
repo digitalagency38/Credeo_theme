@@ -1,3 +1,73 @@
 .first_block {
-    
+    padding-bottom: 45px;
+    @media all and (max-width: 1023px) {
+        padding-bottom: 12px;
+    }
+    &__blocks {
+        border-radius: 40px;
+        background: #F7F9FA;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+            padding: 39px 25px 20px 25px;
+            border-radius: 20px;
+        }
+    }
+    &__l-side {
+        width: 50%;
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    &__title {
+        color: #303633;
+        font-size: 64px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 4px;
+            font-size: 33px;
+        }
+    }
+    &__text {
+        color: #303633;
+        font-size: 18px;
+        margin-bottom: 54px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+    }
+    &__form {
+        @media all and (max-width: 1023px) {
+            display: none;
+        }
+        &.mob {
+            display: none;
+            @media all and (max-width: 1023px) {
+                display: block;
+                padding-top: 315px;
+            }
+        }
+    }
+    &__r-side {
+        width: 50%;
+        font-size: 0;
+        position: relative;
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            img {
+                position: absolute;
+                right: -100px;
+                top: 0;
+                min-width: 410px;
+                max-width: 410px;
+            }
+        }
+    }
 }
