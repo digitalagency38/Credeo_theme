@@ -55,6 +55,8 @@
         @media all and (max-width: 1023px) {
             font-size: 33px;
             margin-bottom: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     &__text {
@@ -64,6 +66,8 @@
         margin-bottom: 44px;
         @media all and (max-width: 1023px) {
             font-size: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     &__btn {
