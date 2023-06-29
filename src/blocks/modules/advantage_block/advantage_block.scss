@@ -1,0 +1,94 @@
+.advantage_block {
+    padding-top: 91px;
+    @media all and (max-width: 1023px) {
+        padding-top: 34px;
+    }
+    &__title {
+        margin-bottom: 136px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 58px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-top: 50px;
+        @media all and (max-width: 1023px) {
+            padding-top: 36px;
+        }
+        @media all and (max-width: 580px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__block {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(25% - 20px);
+        margin-bottom: 70px;
+        position: relative;
+        padding: 57px 50px;
+        border-radius: 40px;
+        background: #F7F9FA;
+        @media all and (max-width: 1200px) {
+            width: calc(33.3% - 20px);
+        }
+        @media all and (max-width: 1023px) {
+            width: calc(50% - 20px);
+            padding: 50px 42px;
+        }
+        @media all and (max-width: 580px) {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__img {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        top: 0;
+        left: 50%;
+        margin-left: -50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
+        border-radius: 50%;
+        @media all and (max-width: 1023px) {
+            width: 72px;
+            height: 72px;
+            margin-top: -36px;
+            margin-left: -36px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    &__tit {
+        margin-bottom: 18px;
+        color: #303633;
+        font-size: 18px;
+        font-weight: 500;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    }
+    &__text {
+        color: #303633;
+        font-size: 16px;
+        line-height: 20.5px;
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+}
