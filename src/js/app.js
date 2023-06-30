@@ -4,6 +4,7 @@ globalFunctions.isWebp();
 import Vue from 'vue/dist/vue.js';
 
 import Header from '../blocks/modules/header/header.js';
+import Tabs from '../blocks/modules/tabs_block/tabs_block.js';
 import Bid from '../blocks/modules/bid_block/bid_block.js';
 import Reviews from '../blocks/modules/reviews/reviews.js';
 import Questions from '../blocks/modules/questions/questions.js';
@@ -21,6 +22,7 @@ window.app = new Vue({
         header: new Header({
             isMobileMenuOpened: false,
         }),
+        tabs: new Tabs(),
         bid: new Bid(),
         reviews: new Reviews(),
         questions: new Questions(),
@@ -38,6 +40,7 @@ window.app = new Vue({
     beforeMount() {
         this.isMounted = true;
         this.header.init();
+        this.tabs.init();
         this.bid.init();
         this.reviews.init();
         this.questions.init();
