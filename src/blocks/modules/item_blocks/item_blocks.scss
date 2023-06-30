@@ -36,7 +36,7 @@
         border-radius: 40px;
         border: 2px solid #2EC54C;
         margin-bottom: 18px;
-        padding: 48px 45px 52px 52px;
+        padding: 48px 35px 52px 35px;
         display: flex;
         flex-direction: column;
         @media all and (max-width: 1023px) {
@@ -48,6 +48,22 @@
             margin-left: 0;
             margin-right: 0;
             width: 100%;
+        }
+        &:hover {
+            background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
+            .item_blocks__number {
+                color: #fff;
+            }
+            .item_blocks__txt {
+                color: #fff;
+            }
+            .item_blocks__icon {
+                svg {
+                    circle {
+                        stroke: #fff !important;
+                    }
+                }
+            }
         }
     }
     &__icon {
@@ -124,6 +140,9 @@
         @media all and (max-width: 1023px) {
             font-size: 12px;
             padding: 20px;
+        }
+        &:hover {
+            background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
         }
     }
 }

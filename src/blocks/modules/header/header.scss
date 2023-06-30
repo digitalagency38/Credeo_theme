@@ -144,6 +144,9 @@
         @media all and (max-width: 1023px) {
             display: none;
         }
+        &:hover {
+            background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
+        }
     }
     &__burger {
         @media all and (min-width: 1023px) {
@@ -170,9 +173,27 @@
             flex-direction: column;
             justify-content: space-between;
         }
+        &:before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
         &.isOpened {
             .header__burger--body {
                 transform: translateX(0%);
+            }
+            &:before {
+                visibility: visible;
+                opacity: 1;
+                background: rgba(0,0,0,0.46);
             }
         }
         &--logo {
@@ -201,8 +222,11 @@
                         color: #303633;
                         font-size: 14px;
                         line-height: 150%;
+                        transition: all .3s ease;
+                        border-bottom: 2px solid transparent;
                         &:hover {
-                            text-decoration: underline;
+                            color: #4EC275;
+                            border-color: #4EC275;
                         }
                     }
                 }
@@ -241,6 +265,9 @@
             border-radius: 9px;
             background: #4EC275;
             padding: 9px;
+            &:hover {
+                background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
+            }
         }
     }
 }

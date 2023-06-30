@@ -86,10 +86,14 @@
         font-size: 16px;
         border-radius: 9px;
         background: #4EC275;
+        cursor: pointer;
         padding: 19px;
         @media all and (max-width: 1023px) {
             max-width: 186px;
             font-size: 12px;
+        }
+        &:hover {
+            background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
         }
     }
     &__r-side {

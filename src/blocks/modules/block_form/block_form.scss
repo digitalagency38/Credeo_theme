@@ -86,6 +86,9 @@
             font-size: 12px;
             padding: 20px;
         }
+        &:hover {
+            background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
+        }
     }
     &__r-side {
         width: 50%;
