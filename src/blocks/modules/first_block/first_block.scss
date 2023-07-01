@@ -13,7 +13,7 @@
         padding: 120px;
         @media all and (max-width: 1023px) {
             flex-direction: column;
-            padding: 39px 25px 20px 25px;
+            padding: 39px 10px 20px 10px;
             border-radius: 20px;
         }
     }
@@ -32,6 +32,8 @@
         @media all and (max-width: 1023px) {
             margin-bottom: 4px;
             font-size: 33px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     &__text {
@@ -41,6 +43,8 @@
         @media all and (max-width: 1023px) {
             margin-bottom: 0;
             font-size: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     &__form {
