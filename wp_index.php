@@ -163,11 +163,11 @@
     					<div class="calc_total">
     						<div class="calc_total_col">
     							<div class="calc_total_title">Ежемесячный платёж</div>
-    							<div class="calc_total_text"><span id="month-pts">1</span>&nbsp;руб.</div>
+    							<div class="calc_total_text"><span id="total-final-pts"></span><span id="month-pts">1</span>&nbsp;руб.</div>
     						</div>
     						<div class="calc_total_cols">
     							<div class="calc_total_cet">Процентная ставка</div>
-    							<div class="calc_total_txt"><span id="total-final-pts"></span><span class="js-days-percents-pts"></span></div><div class="calc_total_proc">%</div>
+    							<div class="calc_total_txt"><span class="js-days-percents-pts"></span></div><div class="calc_total_proc">%</div>
     						</div>
     					</div>
     					<button class="calc_formss" data-modal-id="1">Оформить займ</button>

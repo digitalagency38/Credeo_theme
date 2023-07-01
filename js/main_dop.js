@@ -49,6 +49,16 @@ window.config = {
     }
 };
 $(function() {
+    jQuery(document).ready(function($){
+        $('.header__menu ul').flexMenu({
+            showOnHover: false,
+            linkText: "Еще...",
+            linkTitle: "Показать еще",
+            linkTextAll: "Меню",
+            linkTitleAll: "Развернуть меню", 
+            popupClass: 'more_dropdown'
+        });
+    });
 	document.addEventListener( 'wpcf7mailsent', function( event ) {
 		// ga( 'send', 'event', 'Contact Form', 'submit' );
 		if (event.target.closest('.modal__in')) {
@@ -205,7 +215,8 @@ $(document).ready(function(){
                 daysPercents.html(" " + (currentMonthPercent * 100).toFixed(1).replace(/\.0+$/, ""));
 
                 totalPayMonth.html((cash * currentMonthPercent * days).toFixed(0));
-                totalFinal.html(number_format(String(cash * currentMonthPercent * days + parseInt(cash))));
+                // totalFinal.html(number_format(String(cash * currentMonthPercent * days + parseInt(cash))));
+                totalFinal.html(number_format(parseFloat((cash * currentMonthPercent * days + parseInt(cash)) / days).toFixed(0)));
 
                 totalPayMonth.html(number_format(totalPayMonth.html()));
                 $('input[name="payment"]').val(totalPayMonth.html());
@@ -381,7 +392,8 @@ $(document).ready(function(){
             currentPercentPTS = (currentMonthPercentPTS * currentDayPTS);
 
             $("#month-pts").html(($("#cash-pts").slider("value") * currentPercentPTS).toFixed(0));
-            $("#total-final-pts").html(($("#cash-pts").slider("value") + $("#cash-pts").slider("value") * currentPercentPTS).toFixed(0));
+            // $("#total-final-pts").html(($("#cash-pts").slider("value") + $("#cash-pts").slider("value") * currentPercentPTS).toFixed(0));
+            $("#total-final-pts").html((($("#cash-pts").slider("value") + $("#cash-pts").slider("value") * currentPercentPTS) / currentDayPTS).toFixed(0));
             $("#month-pts").html(number_format($("#month-pts").html()));
             $("#total-pts").html(number_format($("#amount_cash-pts").val()));
             $("#total-final-pts").html(number_format($("#total-final-pts").html()));
@@ -509,19 +521,20 @@ $(document).ready(function(){
     }
 // calc end	
 });
- function animateValue(element, start, end, duration) {
+function animateValue(element, start, end, duration) {
     const range = end - start;
     const increment = range / (duration / 10);
     let current = start;
     const timer = setInterval(function () {
       current += increment;
-      if (Number.isInteger(current)) {
-        element.textContent = current.toFixed(0);
-      } else {
-        element.textContent = current.toFixed(0);
-      }
       if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
         clearInterval(timer);
+        current = end; // Устанавливаем значение равным конечному, чтобы избежать небольшой разницы в результате
+      }
+      if (Number.isInteger(end)) {
+        element.textContent = current.toFixed(0); // Для целых чисел
+      } else {
+        element.textContent = current.toFixed(1); // Для десятичных чисел
       }
     }, 10);
   }

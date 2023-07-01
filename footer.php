@@ -117,13 +117,11 @@
     <script src="<?php echo get_theme_file_uri(); ?>/js/form.js"></script>
     <script src="<?php echo get_theme_file_uri(); ?>/js/jquery-ui.min.js"></script>
     <script src="<?php echo get_theme_file_uri(); ?>/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="<?php echo get_theme_file_uri(); ?>/js/modernizr.custom.js"></script>
+    <script src="<?php echo get_theme_file_uri(); ?>/js/flexmenu.min.js"></script>
     <script src="<?php echo get_theme_file_uri(); ?>/js/main_dop.js"></script>
     <script src="<?php echo get_theme_file_uri(); ?>/js/form_step.js"></script>
     <script src="<?php echo get_theme_file_uri(); ?>/js/calc_step.js"></script>
-    <script>
-        
-
-    </script>
     <?php wp_footer();?>
 </body>
 </html>
