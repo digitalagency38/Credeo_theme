@@ -54,6 +54,10 @@
                     &:hover {
                         color: #4EC275;
                         border-color: #4EC275;
+                    } 
+                    &.isActive {
+                        color: #4EC275;
+                        border-color: #4EC275;
                     }
                 }
             }
@@ -96,6 +100,15 @@
                     height: 20px;
                 }
             }
+            &:hover {
+                background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
+                border: 1px solid transparent;
+                svg {
+                    path {
+                        fill: #fff !important;
+                    }
+                }
+            }
         }
     }
     &__tel {
@@ -131,6 +144,9 @@
                 height: 11px;
                 left: 15px;
             }
+        }
+        &:hover {
+            border: 1px solid transparent;
         }
     }
     &__btn {

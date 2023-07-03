@@ -146,6 +146,15 @@
                     height: 20px;
                 }
             }
+            &:hover {
+                background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
+                border: 1px solid transparent;
+                svg {
+                    path {
+                        fill: #fff !important;
+                    }
+                }
+            }
         }
     }
     &__tel {
