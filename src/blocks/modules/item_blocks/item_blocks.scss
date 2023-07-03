@@ -1,6 +1,6 @@
 .item_blocks {
-    padding-top: 45px;
-    padding-bottom: 64px;
+    padding-top: vw(45);
+    padding-bottom: vw(64);
     @media all and (max-width: 1023px) {
         padding-top: 12px;
         padding-bottom: 35px;
@@ -33,10 +33,10 @@
         margin-left: 9px;
         margin-right: 9px;
         width: calc(50% - 18px);
-        border-radius: 40px;
+        border-radius: vw(40);
         border: 2px solid #2EC54C;
         margin-bottom: 18px;
-        padding: 48px 35px 52px 35px;
+        padding: vw(48) vw(35) vw(52) vw(35);
         display: flex;
         flex-direction: column;
         @media all and (max-width: 1023px) {
@@ -72,9 +72,9 @@
     }
     &__number {
         color: #4EC275;
-        font-size: 72px;
+        font-size: vw(72);
         font-weight: 500;
-        margin-bottom: 33px;
+        margin-bottom: vw(33);
         @media all and (max-width: 1023px) {
             font-size: 48px;
             margin-bottom: 23px;
@@ -82,14 +82,14 @@
     }
     &__txt {
         color: #303633;
-        font-size: 16px;
+        font-size: vw(16);
         @media all and (max-width: 1023px) {
             font-size: 12px;
         }
     }
     &__r-side {
         width: calc(50% - 8px);
-        border-radius: 40px;
+        border-radius: vw(40);
         border: 2px solid #2EC54C;
         display: flex;
         align-items: center;
@@ -102,10 +102,10 @@
         }
     }
     &__title {
-        margin-bottom: 24px;
+        margin-bottom: vw(24);
         color: #303633;
         text-align: center;
-        font-size: 48px;
+        font-size: vw(48);
         font-weight: 500;
         max-width: 468px;
         width: 100%;
@@ -117,8 +117,8 @@
     &__text {
         color: #303633;
         text-align: center;
-        font-size: 16px;
-        margin-bottom: 70px;
+        font-size: vw(16);
+        margin-bottom: vw(70);
         max-width: 275px;
         width: 100%;
         @media all and (max-width: 1023px) {
@@ -134,8 +134,8 @@
         cursor: pointer;
         width: 100%;
         color: #FFF;
-        font-size: 16px;
-        padding: 18px;
+        font-size: vw(16);
+        padding: vw(18);
         text-align: center;
         @media all and (max-width: 1023px) {
             font-size: 12px;

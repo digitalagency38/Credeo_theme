@@ -1,14 +1,14 @@
 .calc_form {
     &__in {
-        padding-bottom: 55px;
-        padding-top: 53px;
+        padding-bottom: vw(55);
+        padding-top: vw(53);
         @media all and (max-width: 1023px) {
             padding-bottom: 37px;
             padding-top: 40px;
         }
     }
     &__title {
-        margin-bottom: 77px;
+        margin-bottom: vw(77);
         @media all and (max-width: 1023px) {
             padding-left: 20px;
             padding-right: 20px;
@@ -17,7 +17,7 @@
     }
     &__item {
         display: flex;
-        border-radius: 40px;
+        border-radius: vw(40);
         background: #F7F9FA;
         overflow: hidden;
         @media all and (max-width: 1023px) {
@@ -57,11 +57,10 @@
         }
     }
     &__tit {
-        margin-bottom: 38px;
+        margin-bottom: vw(38);
         color: #303633;
-        font-size: 32px;
+        font-size: vw(32);
         font-weight: 500;
-        line-height: 32px;
         @media all and (max-width: 1023px) {
             margin-bottom: 24px;
             text-align: center;

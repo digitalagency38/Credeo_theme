@@ -1,10 +1,10 @@
 .advantage_block {
-    padding-top: 91px;
+    padding-top: vw(91);
     @media all and (max-width: 1023px) {
         padding-top: 34px;
     }
     &__title {
-        margin-bottom: 136px;
+        margin-bottom: vw(136);
         @media all and (max-width: 1023px) {
             margin-bottom: 58px;
             padding-left: 20px;
@@ -17,7 +17,7 @@
         flex-wrap: wrap;
         margin-left: -10px;
         margin-right: -10px;
-        padding-top: 50px;
+        padding-top: vw(50);
         @media all and (max-width: 1023px) {
             padding-top: 36px;
         }
@@ -32,7 +32,7 @@
         width: calc(25% - 20px);
         margin-bottom: 70px;
         position: relative;
-        padding: 57px 50px;
+        padding: vw(57) vw(50);
         border-radius: 40px;
         background: #F7F9FA;
         @media all and (max-width: 1200px) {
@@ -50,17 +50,21 @@
     }
     &__img {
         position: absolute;
-        width: 100px;
-        height: 100px;
-        margin-top: -50px;
+        width: vw(100);
+        height: vw(100);
+        margin-top: vw(-50);
         top: 0;
         left: 50%;
-        margin-left: -50px;
+        margin-left: vw(-50);
         display: flex;
         align-items: center;
         justify-content: center;
         background: linear-gradient(90deg, #2EC54C 0%, #9AD135 100%);
         border-radius: 50%;
+        img {
+            width: vw(52);
+            height: vw(52);
+        }
         @media all and (max-width: 1023px) {
             width: 72px;
             height: 72px;
@@ -73,9 +77,9 @@
         }
     }
     &__tit {
-        margin-bottom: 18px;
+        margin-bottom: vw(18);
         color: #303633;
-        font-size: 18px;
+        font-size: vw(18);
         font-weight: 500;
         @media all and (max-width: 1023px) {
             margin-bottom: 15px;
@@ -84,8 +88,7 @@
     }
     &__text {
         color: #303633;
-        font-size: 16px;
-        line-height: 20.5px;
+        font-size: vw(16);
         @media all and (max-width: 1023px) {
             font-size: 12px;
             line-height: normal;

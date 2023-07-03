@@ -1,12 +1,12 @@
 .stages_block {
-    padding-top: 70px;
-    padding-bottom: 42px;
+    padding-top: vw(70);
+    padding-bottom: vw(42);
     @media all and (max-width: 1023px) {
         padding-top: 40px;
         padding-bottom: 39px;
     }
     &__h1 {
-        margin-bottom: 50px;
+        margin-bottom: vw(50);
         @media all and (max-width: 1023px) {
             margin-bottom: 55px;
             padding-left: 15px;
@@ -22,7 +22,7 @@
     }
     &__l-side {
         font-size: 0;
-        width: calc(50% - 85px);
+        width: calc(50% - vw(85));
         @media all and (max-width: 1023px) {
             display: none;
         }
@@ -34,7 +34,7 @@
         }
     }
     &__r-side {
-        width: calc(50% - 85px);
+        width: calc(50% - vw(85));
         position: relative;
         @media all and (max-width: 1023px) {
             width: 100%;
@@ -45,13 +45,14 @@
             position: absolute;
             content: "";
             width: 3px;
-            height: calc(100% - 105px);
+            height: calc(100% - vw(105));
             pointer-events: none;
             background: #4EC275;
-            left: 74px;
-            top: 18px;
+            left: vw(74);
+            top: vw(18);
             @media all and (max-width: 1023px) {
                 left: 45px;
+                top: 18px;
                 height: 100%;
                 width: 2px;
             }
@@ -60,7 +61,7 @@
     &__block {
         display: flex;
         &:not(:last-child) {
-            margin-bottom: 85px;
+            margin-bottom: vw(85);
             @media all and (max-width: 1023px) {
                 margin-bottom: 40px;
             }
@@ -68,11 +69,11 @@
     }
     &__lside {
         color: #303633;
-        font-size: 20px;
-        padding-right: 122px;
+        font-size: vw(20);
+        padding-right: vw(122);
         position: relative;
-        flex: 0 0 25px;
-        padding-top: 18px;
+        flex: 0 0 vw(25);
+        padding-top: vw(18);
         @media all and (max-width: 1023px) {
             padding-right: 48px;
             font-size: 12px;
@@ -84,13 +85,13 @@
             position: absolute;
             pointer-events: none;
             z-index: 2;
-            width: 28px;
-            height: 28px;
-            border-radius: 28px;
+            width: vw(28);
+            height: vw(28);
+            border-radius: vw(28);
             border: 3px solid #4EC275;
             background: #FFF;
-            top: 18px;
-            left: 62px;
+            top: vw(18);
+            left: vw(64);
             @media all and (max-width: 1023px) {
                 width: 24px;
                 height: 24px;
@@ -106,7 +107,7 @@
     }
     &__tit {
         color: #303633;
-        font-size: 48px;
+        font-size: vw(48);
         font-weight: 500;
         margin-bottom: 9px;
         @media all and (max-width: 1023px) {
@@ -116,7 +117,7 @@
     }
     &__text {
         color: #303633;
-        font-size: 16px;
+        font-size: vw(16);
         max-width: 292px;
         width: 100%;
         @media all and (max-width: 1023px) {
