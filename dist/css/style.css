@@ -879,6 +879,14 @@ body .stages_block__text span {
   display: block !important;
 }
 
+.feedback__form.isSend .calc_form__item {
+  display: none;
+}
+
+.feedback__form.isSend #step4 {
+  display: flex;
+}
+
 .header {
   padding-top: 1.4583333333vw;
   padding-bottom: 1.0416666667vw;

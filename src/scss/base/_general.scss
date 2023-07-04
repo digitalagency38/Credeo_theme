@@ -733,3 +733,13 @@ body {
         display: block !important;
     }
 }
+.feedback__form {
+    &.isSend {
+        .calc_form__item {
+            display: none;
+        }
+        #step4 {
+            display: flex;
+        }
+    }
+}
