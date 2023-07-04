@@ -650,6 +650,7 @@ body .modal__text {
 
 body .block_main__sending {
   text-align: center;
+  display: none;
 }
 
 body .block_main__sending--tit {
@@ -864,6 +865,18 @@ body .flexMenu-popup li a:hover {
 
 body .stages_block__text span {
   white-space: nowrap;
+}
+
+.isSend input,
+.isSend .personal_text,
+.isSend .politic_text,
+.isSend .modal__title,
+.isSend .modal__text {
+  display: none;
+}
+
+.isSend .block_main__sending {
+  display: block !important;
 }
 
 .header {

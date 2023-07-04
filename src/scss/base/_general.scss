@@ -485,6 +485,7 @@ body {
     }
     .block_main__sending {
         text-align: center;
+        display: none;
     }
     .block_main__sending--tit {
         margin-bottom: vw(15);
@@ -722,5 +723,13 @@ body {
     }
     .stages_block__text span {
         white-space: nowrap;
+    }
+}
+.isSend {
+    input, .personal_text, .politic_text, .modal__title, .modal__text {
+        display: none;
+    }
+    .block_main__sending {
+        display: block !important;
     }
 }
